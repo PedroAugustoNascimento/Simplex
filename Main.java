@@ -8,7 +8,7 @@ public class Main {
     static int num_restricoes;
 
     public static void main(String[] args) {
-        String caminhoArquivo = "C:\\Users\\0079485\\Desktop\\Simplex-2";
+        String caminhoArquivo = "C:\\Users\\pakkz\\OneDrive\\Documentos\\SIMPLEX";
 
         File pasta = new File(caminhoArquivo);
 
@@ -51,7 +51,7 @@ public class Main {
                                 StringTokenizer linhaFormatada = new StringTokenizer(linha, " ");
                                 for (int i = 0; i < variaveis; i++) {
                                     if(tipoProblema == 1){
-                                        funcaoObjetivo[i] = Double.parseDouble(linhaFormatada.nextToken()) * (-1);
+                                        funcaoObjetivo[i] = Double.parseDouble(linhaFormatada.nextToken()) * (-1); // multiplicando a função objetivo por -1
                                     } else{
                                         funcaoObjetivo[i] = Double.parseDouble(linhaFormatada.nextToken());
                                     }

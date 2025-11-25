@@ -14,7 +14,9 @@ public class Simplex {
         while(encontraNegativo(matriz)){
             int colunaPivo;
             colunaPivo = escolherColunaPivo(matriz);
-            if (colunaPivo == -1) break; // solução ótima
+            if (colunaPivo == -1) {
+                break; // solução ótima
+            }
             int linhaPivo;
             linhaPivo = escolherLinhaPivo(matriz, colunaPivo);
             calculoGaussJordan(matriz, colunaPivo, linhaPivo);
